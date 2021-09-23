@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body div{
+    width: 50%;
+}
+
+#legs{
+
+    animation: leg 1s ease-in-out infinite alternate;
+}
+
+#leaf
+{
+    animation:leaf 2s  infinite alternate;
+}
+#hair
+{
+    animation:hair 2s  infinite alternate;
+}
+#page
+{
+    animation:page 2s  infinite alternate;
+}
+@keyframes page {
+    from{
+        
+        transform: translateZ(0%);
+    }
+    
+    to{
+    
+        transform:rotateZ(0.5deg) translate(0.5% )
+   
+    }
+        
+    }
+@keyframes hair {
+    from{
+        
+        transform: translateZ(0%);
+    }
+    
+    to{
+    
+        transform:rotateZ(0.5deg) translate(0.5% )
+   
+    }
+        
+    }
+@keyframes leaf {
+    from{
+        
+        transform: translateZ(0%);
+    }
+    
+    to{
+    
+        transform: translateY(0.4%);
+        transform: translateX(0.4%);
+    }
+        
+    }
+@keyframes leg {
+from{
+    
+    transform: translateX(0%);
+}
+
+to{
+
+    transform:rotateZ(0.5deg) translateX(0.4%)
+}
+    
+}
